@@ -1,0 +1,96 @@
+/* tabulous.css */
+
+.tabrow {
+
+    text-align: right;
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    line-height: 24px;
+    border-bottom: 1px solid #aaa;
+}
+
+.tabrow li {
+
+    background: -moz-linear-gradient(top, #ececec 50%, #d1d1d1 100%);
+    //box-shadow: 0 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #fff;
+    text-shadow: 0 1px #fff;
+
+    position: relative;
+    margin: 0 -3px;
+    padding: 5px 30px;
+    display: inline;
+    top: -2px;
+    border: 1px solid #aaa;
+    border-radius: 6px 6px 0px 0px;
+    cursor: default;
+}
+
+.tabrow li:hover {
+    color: #002cff;
+}
+
+.tabrow li:before, .tabrow li:after {
+
+    position: absolute;
+    bottom: -1px;
+    width: 8px;
+    height: 8px;
+    content: " ";
+    border: 1px solid #aaa;
+} 
+
+.tabrow li:before {
+    left: -9px;
+    border-bottom-right-radius: 6px;
+    border-width: 0 1px 1px 0;
+    box-shadow: 2px 0px 0 #ececec;;
+}
+
+.tabrow li:after {
+    right: -9px;
+    border-bottom-left-radius: 6px;
+    border-width: 0 0 1px 1px;
+    box-shadow: -2px 0px 0px #ececec;
+}
+
+.tabrow li.selected {
+
+    background: #ffffff;
+    color: #000000;
+    height: 24px;
+    border-bottom: 1px solid #ffffff;
+    z-index: 2;
+
+}
+
+.tabrow li.selected:before {
+    box-shadow: 2px 2px 0 #fff;
+}
+
+.tabrow li.selected:after {
+    box-shadow: -2px 2px 0 #fff;
+}
+
+.tabcontents {
+    list-style: none;
+    border: 1px solid #aaa;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    margin: 0px;
+    padding: 10px;
+    min-height: 400px;
+}
+
+.tabcontents li {
+    display: none;
+}
+
+.tabcontents li.selected {
+    display: block;
+}
+
+
+
+

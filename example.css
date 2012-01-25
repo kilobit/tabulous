@@ -1,0 +1,23 @@
+/* example.css */
+
+body {
+    background-color: #cacaca;
+    font-family: helvetica, sans-serif;
+
+}
+
+section.content {
+    background-color: #ffffff;
+    width: 1024px;
+    min-height: 2048px;
+    margin: auto;
+}
+
+h1.title {
+    color: #020202;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border: 1px none #000000;
+}
+
